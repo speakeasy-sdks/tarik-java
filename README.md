@@ -6,7 +6,7 @@
 ### Gradle
 
 ```groovy
-implementation 'tarik.LK:LK:1.0.0'
+implementation 'tarik.LK:LK:1.0.1'
 ```
 <!-- End SDK Installation -->
 
