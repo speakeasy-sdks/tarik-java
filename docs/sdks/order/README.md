@@ -35,6 +35,12 @@ public class Application {
 }
 ```
 
+
+### Response
+
+**[tarik.LK.models.operations.OrderSchemaApiV1OrdersSchemaGetResponse](../../models/operations/OrderSchemaApiV1OrdersSchemaGetResponse.md)**
+
+
 ## orderValidatedApiV1OrdersPost
 
 Checks if JSON has valid schema and adds request to create new order. No multiple orders will be created for the same **order_id**, even if request is accepted. Only first order request for **order_id** is created.
@@ -102,3 +108,16 @@ public class Application {
     }
 }
 ```
+
+### Parameters
+
+| Parameter                                                                                                                            | Type                                                                                                                                 | Required                                                                                                                             | Description                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                                                            | [tarik.LK.models.shared.Order](../../models/shared/Order.md)                                                                         | :heavy_check_mark:                                                                                                                   | The request object to use for the request.                                                                                           |
+| `security`                                                                                                                           | [tarik.LK.models.operations.OrderValidatedApiV1OrdersPostSecurity](../../models/operations/OrderValidatedApiV1OrdersPostSecurity.md) | :heavy_check_mark:                                                                                                                   | The security requirements to use for the request.                                                                                    |
+
+
+### Response
+
+**[tarik.LK.models.operations.OrderValidatedApiV1OrdersPostResponse](../../models/operations/OrderValidatedApiV1OrdersPostResponse.md)**
+

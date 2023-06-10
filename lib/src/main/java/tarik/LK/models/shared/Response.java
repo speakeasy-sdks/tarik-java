@@ -14,9 +14,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Response {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("data")
-    public java.util.Map<String, Object> data;
+    public ResponseData data;
 
-    public Response withData(java.util.Map<String, Object> data) {
+    public Response withData(ResponseData data) {
         this.data = data;
         return this;
     }
